@@ -52,7 +52,7 @@ export const projects: Project[] = [
     type: "Brand System / Packaging",
     description:
       "围绕茶饮品牌构建包装、视觉与周边系统，形成从品牌识别到消费体验的完整生态表达。",
-    image: "/images/project-teahood.jpg",
+    image: "/images/project-teahood.png",
     tags: ["Brand", "Packaging", "Visual"],
   },
   {
