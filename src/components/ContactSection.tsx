@@ -22,7 +22,7 @@ export default function ContactSection() {
           </a>
           <div data-stagger-card className="glass-card rounded-[28px] p-5">
             <p className="text-xs uppercase tracking-[0.28em] text-white/[0.36]">WeChat</p>
-            <p className="mt-3 text-sm text-white/[0.76]">Available on request</p>
+            <p className="mt-3 text-sm text-white/[0.76]">Coming soon</p>
           </div>
           <div data-stagger-card className="glass-card rounded-[28px] p-5">
             <p className="text-xs uppercase tracking-[0.28em] text-white/[0.36]">Portfolio</p>

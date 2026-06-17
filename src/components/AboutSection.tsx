@@ -9,10 +9,10 @@ const stats = [
 ];
 
 const info = [
-  { label: "Identity", value: "Industrial Designer / Product Designer" },
-  { label: "Focus", value: "AI Hardware / Companion Robot / CMF / Brand Visual" },
+  { label: "Identity", value: "工业设计师 / 产品设计师" },
+  { label: "Focus", value: "AI 硬件 / 陪伴机器人 / CMF / 品牌视觉" },
   { label: "Email", value: "XML_Design@163.com", href: "mailto:XML_Design@163.com" },
-  { label: "Location", value: "China / Japan" },
+  { label: "Location", value: "杭州" },
 ];
 
 const glowProps = {
