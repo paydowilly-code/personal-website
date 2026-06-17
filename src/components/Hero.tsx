@@ -9,14 +9,18 @@ export default function Hero() {
 
   useEffect(() => {
     const loadVideo = () => setVideoReady(true);
-    const idleId =
-      "requestIdleCallback" in window
-        ? window.requestIdleCallback(loadVideo, { timeout: 2200 })
-        : window.setTimeout(loadVideo, 1400);
+    let timeoutId = 0;
+    let idleId = 0;
+
+    if ("requestIdleCallback" in window) {
+      idleId = window.requestIdleCallback(loadVideo, { timeout: 2200 });
+    } else {
+      timeoutId = globalThis.setTimeout(loadVideo, 1400);
+    }
 
     return () => {
-      if ("cancelIdleCallback" in window && typeof idleId === "number") window.cancelIdleCallback(idleId);
-      else window.clearTimeout(idleId as number);
+      if (idleId && "cancelIdleCallback" in window) window.cancelIdleCallback(idleId);
+      if (timeoutId) globalThis.clearTimeout(timeoutId);
     };
   }, []);
 
