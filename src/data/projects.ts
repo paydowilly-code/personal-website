@@ -5,6 +5,9 @@ export type Project = {
   description: string;
   image: string;
   thumbnail?: string;
+  pdfUrl?: string;
+  previewImages?: string[];
+  detailImage?: string;
   tags: string[];
   featured?: boolean;
 };
@@ -18,6 +21,11 @@ export const projects: Project[] = [
       "面向独居青年的低压力社交 AI 陪伴机器人，通过桌面交互、异步留言与场景陪伴，缓解社交启动压力。",
     image: "/images/project-lumi.webp",
     thumbnail: "/images/project-lumi-thumb.webp",
+    pdfUrl: "/pdf/lumi-presentation.pdf",
+    previewImages: Array.from(
+      { length: 14 },
+      (_, index) => `/images/lumi-pages/page-${String(index + 1).padStart(2, "0")}.webp`,
+    ),
     tags: ["AI Hardware", "Companion Robot", "CMF"],
     featured: true,
   },
@@ -39,6 +47,7 @@ export const projects: Project[] = [
       "集成深蹲架、龙门架、肋木架与 AI 健身镜，通过隐藏式结构与动作识别系统，让专业训练进入家庭空间。",
     image: "/images/project-fitness-master.webp",
     thumbnail: "/images/project-fitness-master-thumb.webp",
+    detailImage: "/images/fitness-master-detail.webp",
     tags: ["Smart Home", "Fitness", "Product"],
   },
   {
