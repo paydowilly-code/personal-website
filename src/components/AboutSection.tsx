@@ -9,10 +9,10 @@ const stats = [
 ];
 
 const info = [
-  { label: "身份", value: "工业设计师 / 产品设计师" },
-  { label: "方向", value: "AI 硬件 / 陪伴机器人 / CMF / 品牌视觉" },
-  { label: "邮箱", value: "XML_Design@163.com", href: "mailto:XML_Design@163.com" },
-  { label: "所在地", value: "杭州 / 成都" },
+  { label: "Identity", value: "工业设计师 / 产品设计师" },
+  { label: "Focus", value: "AI 硬件 / 陪伴机器人 / CMF / 品牌视觉" },
+  { label: "Email", value: "XML_Design@163.com", href: "mailto:XML_Design@163.com" },
+  { label: "Location", value: "杭州 / 成都" },
 ];
 
 const glowProps = {
@@ -32,11 +32,7 @@ export default function AboutSection() {
       <div className="absolute right-[-8rem] bottom-24 h-80 w-80 rounded-full bg-ember-500/6 blur-[130px]" />
 
       <div className="mx-auto flex max-w-portfolio flex-col gap-12 px-5 sm:px-8 lg:px-12">
-        <div className="max-w-4xl">
-          <SectionTitle eyebrow="关于我 / About" title="Hi, I am XUMENGLE." />
-        </div>
-
-        <div className="grid gap-8 lg:grid-cols-[minmax(360px,0.92fr)_minmax(0,1.08fr)] lg:items-start">
+        <div className="grid gap-8 lg:grid-cols-[minmax(360px,0.92fr)_minmax(0,1.08fr)] lg:items-stretch">
           <BorderGlow
             data-stagger-card
             className="group min-h-[520px] overflow-hidden lg:min-h-[760px]"
@@ -70,10 +66,14 @@ export default function AboutSection() {
             </div>
           </BorderGlow>
 
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-8 lg:min-h-[760px]">
+            <div className="shrink-0 pt-1">
+              <SectionTitle eyebrow="关于我 / About" title="Hi, I am XUMENGLE." />
+            </div>
+
             <BorderGlow
               data-stagger-card
-              className="min-h-[420px] lg:min-h-[474px]"
+              className="min-h-[420px] flex-1"
               backgroundColor="#08090d"
               borderRadius={34}
               glowRadius={30}
@@ -81,10 +81,10 @@ export default function AboutSection() {
               glowIntensity={0.7}
               {...glowProps}
             >
-              <div className="flex h-full min-h-[420px] flex-col justify-between p-6 sm:p-7 md:p-9 lg:min-h-[474px]">
+              <div className="flex h-full min-h-[420px] flex-col justify-between p-6 sm:p-7 md:p-9">
                 <div className="space-y-8">
                   <p className="max-w-4xl text-[1.08rem] leading-8 text-white/72 sm:text-[1.18rem] sm:leading-9 md:text-[1.35rem] md:leading-10">
-                    我是一名工业设计方向的设计师，关注 AI 产品、陪伴机器人、产品 CMF、品牌视觉与产品体验设计。能够从调研、概念设定、造型推导、三维建模、产品渲染到最终展示，完成较完整的项目推进。
+                我是一名工业设计 / AI 产品方向的设计师，具备从用户调研、概念设定、造型推导、CMF、三维建模、产品渲染到原型制作的全流程推进能力，同时具备 AI Agent / Web UI 实践经验，能够将 AI 工具链融入设计分析、方案生成与体验验证过程。
                   </p>
 
                   <div className="grid gap-3 md:grid-cols-2">

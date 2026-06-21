@@ -49,11 +49,14 @@ export const projects: Project[] = [
       "集成深蹲架、龙门架、肋木架与 AI 健身镜，通过隐藏式结构与动作识别系统，让专业训练进入家庭空间。",
     image: "/images/project-fitness-master.webp",
     thumbnail: "/images/project-fitness-master-thumb.webp",
-    pdfUrl: "/pdf/fitness-master-portfolio.pdf",
-    previewImages: Array.from(
-      { length: 8 },
-      (_, index) => `/images/fitness-pages/page-${String(index + 1).padStart(2, "0")}.webp`,
-    ),
+    pdfUrl: "/pdf/fitness-master-portfolio-v2.pdf",
+    previewImages: [
+      "/images/fitness-master-board.webp",
+      ...Array.from(
+        { length: 9 },
+        (_, index) => `/images/fitness-pages/page-${String(index + 1).padStart(2, "0")}.webp`,
+      ),
+    ],
     tags: ["智能家居", "健身产品", "产品设计"],
   },
   {
