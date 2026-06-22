@@ -152,8 +152,8 @@ export default function AboutSection() {
           <div className="p-6 sm:p-7 lg:p-8">
             <div className="mb-5 flex items-end justify-between gap-4">
               <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.42em] text-white/34">CAREER PATH</p>
-                <p className="mt-3 text-2xl font-semibold text-white/80 sm:text-3xl">工作经历</p>
+                <p className="text-xs font-semibold uppercase tracking-[0.42em] text-white/34">PROJECT EXPERIENCE</p>
+                <p className="mt-3 text-2xl font-semibold text-white/80 sm:text-3xl">项目经历</p>
               </div>
               <p className="hidden text-sm text-white/36 md:block">横向时间轴</p>
             </div>
